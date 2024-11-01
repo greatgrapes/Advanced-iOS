@@ -63,3 +63,6 @@ final 키워드는 override을 제한할 뿐만 아니라, Dynamic DisPatch을 �
 속도가 중요한 앱에서 이러한 최적화는 훌륭한 UX를 만드는데 기여한다는 점은 분명함.
 
 그래서 상속이 필요하지 않은 클래스엔 final을 작성하며, 외부에 접근이 필요 없는 클래스나 메서드 프로퍼티 또한 Private/fileprivate을 작성하는 습관 가지기!!
+
+참고
+https://developer.apple.com/swift/blog/?id=27
