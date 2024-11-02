@@ -43,3 +43,18 @@ public enum Unicode {}
 ```
 
 구조체로 선언해서 멤버들을 관리하느냐 / enum으로 관리하느냐 선호도 차이일듯. 각 접근방식에 따른 메모리 성능 차이는 추후 학습해야할듯.
+
+----
+
+CaseIterable 프로토콜 채택시 열거형의 모든사례를 포함하는 배열인 .allCases 라는 속성을 자동으로 생성해줌.
+일반적으로 각 케이스를 다루는 테스트를 작성하는데 유용함.
+```swift
+enum Direction: CaseIterable {
+    case north
+    case south
+    case east
+    case west
+}
+
+Direction.allCases // [.north, .south, .east, .west]
+```
